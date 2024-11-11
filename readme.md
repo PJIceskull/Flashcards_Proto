@@ -5,7 +5,7 @@ This is the code repository for the prototype build of my Flashcard application.
 ## Preview Site
 
 [Web4]()
-[Github Pages]()
+[Github Pages](https://pjiceskull.github.io/Flashcards_Proto/dist)
 
 ## About Project
 
