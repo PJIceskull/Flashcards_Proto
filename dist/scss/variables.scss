@@ -1,0 +1,21 @@
+// Variables
+$color1: #000;
+$color2: #abc;
+$color3: #222;
+$color4: #333;
+$color5: #fff;
+
+// Color Palette using Map value
+$colors: (
+  "red": #ff0000,
+  "green": #00ff00,
+  "blue": #0000ff,
+);
+// Remove '/' in code below
+// @debug map-get($/map: $-colors, $/key: 'red');
+
+$site-width: 1280px;
+$site-height: 800px;
+$web-width: 1440px;
+$iPad-width: 780px;
+$phone-width: 430px;
