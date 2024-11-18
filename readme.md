@@ -7,6 +7,10 @@ This is the code repository for the prototype build of my Flashcard application.
 - [Web4]()
 - [Github Pages](https://pjiceskull.github.io/Flashcards_Proto/dist)
 
+Link to Website Design Prototype
+
+- [Figma Prototype](https://www.figma.com/design/REQccuKJA6Cs4YV8Auqh95/Flashcard-App-Design-Prototype?node-id=0-1&t=6pnbALzpexDH9mh7-1)
+
 ## About Project
 
 This project is tended to be a prototype of my Flashcards app. The prooject will be a working Flashcard application complete with CRUD app feature such as:
