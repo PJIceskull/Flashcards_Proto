@@ -1,0 +1,15 @@
+footer {
+  background-color: #f1f1f1;
+  min-height: 150px;
+  color: map-get($map: $web_colors, $key: charadeBlack);
+  border-top: 3px solid map-get($map: $web_colors, $key: "tomato");
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 72px;
+  p {
+    font-family: Roboto_Light;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}

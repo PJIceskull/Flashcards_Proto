@@ -1,0 +1,56 @@
+button {
+  transition-duration: 0.3s;
+  border: none;
+}
+.createBTN {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 18px;
+  font-family: Roboto_Medium;
+  a {
+    color: map-get($map: $web_colors, $key: "tomato");
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .plusIcon {
+    transition-duration: 0.3s;
+    filter: $tomatoFilter;
+    height: 36px;
+    width: 36px;
+  }
+  &:hover {
+    background-color: map-get($map: $web_colors, $key: "tomato");
+    a {
+      color: map-get($map: $web_colors, $key: "white");
+    }
+    .plusIcon {
+      filter: $whiteFilter;
+    }
+  }
+}
+.loginBTN {
+  color: map-get($map: $web_colors, $key: "white");
+  background-color: map-get($map: $web_colors, $key: "darkSlateGray");
+  border-radius: 22px;
+  width: 130px;
+  height: 60px;
+  a {
+    color: map-get($map: $web_colors, $key: "white");
+    font-family: Roboto_Bold;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &:hover {
+    background-color: map-get($map: $web_colors, $key: "light_darkSlateGray");
+    a {
+      color: map-get($map: $web_colors, $key: "white");
+    }
+  }
+}

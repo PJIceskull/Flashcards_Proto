@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto_Regular;
 }
 html,
 body {
@@ -18,4 +19,14 @@ p {
 }
 
 #app {
+  max-width: $site-width;
+  // min-height: $site-height;
+  min-height: 100%;
+  // background-color: burlywood;
+  margin: 0 auto;
+}
+
+img {
+  height: 100%;
+  width: 100%;
 }

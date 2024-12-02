@@ -1,0 +1,18 @@
+nav {
+  height: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid map-get($map: $web_colors, $key: "darkSlateGray");
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Roboto_Medium;
+    font-size: 24px;
+    color: #000000;
+    transition-duration: 0.25s;
+    &:hover {
+      color: map-get($map: $web_colors, $key: "tomato");
+    }
+  }
+}

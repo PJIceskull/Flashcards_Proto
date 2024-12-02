@@ -4,7 +4,7 @@
   "description": "This is the code repository for the prototype build of my Flashcard application.",
   "main": "index.js",
   "scripts": {
-    "serve": "live-server",
+    "serve": "live-server dist",
     "compile:sass": "sass dist/scss/styles.scss dist/css/styles.css -w",
     "build-webpack": "webpack"
   },

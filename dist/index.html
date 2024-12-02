@@ -8,12 +8,35 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <div class="flashoLogo">
+        <img
+          src="images/logos/Flasho Logo.png"
+          alt="Flasho Logo in Red Text and Cards behind it"
+        />
+      </div>
+      <a href="explore">Explore</a>
+      <div class="searchBar"></div>
 
-    <h1>Flashcards</h1>
+      <button class="createBTN">
+        <a href="create">
+          create
+          <div class="plusIcon">
+            <img
+              src="images/icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Red Plus Icon"
+            />
+          </div>
+        </a>
+      </button>
 
+      <button class="loginBTN"><a href="login">Log in</a></button>
+    </nav>
+    <!-- Main Content -->
     <div id="app"></div>
-
+    <footer>
+      <p>&copy; 2024 Flasho</p>
+    </footer>
     <script src="lib/jquery-3.7.1.min.js"></script>
     <script src="app/app.js"></script>
   </body>

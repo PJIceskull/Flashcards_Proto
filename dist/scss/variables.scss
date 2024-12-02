@@ -1,19 +1,23 @@
 // Variables
-$color1: #000;
-$color2: #abc;
-$color3: #222;
-$color4: #333;
-$color5: #fff;
-
 // Color Palette using Map value
-$colors: (
-  "red": #ff0000,
-  "green": #00ff00,
-  "blue": #0000ff,
+$web_colors: (
+  "tomato": #e74c3c,
+  "dark_tomato": #9a3039,
+  "charadeBlack": #1a2530,
+  "darkSlateGray": #2c3e50,
+  "light_darkSlateGray": #34495e,
+  "white": #ffffff,
 );
 // Remove '/' in code below
 // @debug map-get($/map: $-colors, $/key: 'red');
 
+// Filters
+$tomatoFilter: brightness(0) saturate(100%) invert(45%) sepia(59%)
+  saturate(2397%) hue-rotate(333deg) brightness(89%) contrast(103%);
+$whiteFilter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+  saturate(7464%) hue-rotate(326deg) brightness(100%) contrast(114%);
+
+// Device Sizes
 $site-width: 1280px;
 $site-height: 800px;
 $web-width: 1440px;
