@@ -14,17 +14,27 @@
   </head>
   <body>
     <nav>
-      <div class="flashoLogo">
-        <img
-          src="images/logos/Flasho Logo.png"
-          alt="Flasho Logo in Red Text and Cards behind it"
-        />
-      </div>
+      <a href="#home">
+        <div class="flashoLogo">
+          <img
+            src="images/logos/Flasho Logo.png"
+            alt="Flasho Logo in Red Text and Cards behind it"
+          />
+        </div>
+      </a>
       <a href="explore">Explore</a>
-      <div class="searchBar"></div>
+      <div class="searchBar">
+        <div class="searchIcon">
+          <img
+            src="images/icons/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
+            alt="Blue Maginifing Glass"
+          />
+        </div>
+        <input type="text" placeholder="Search Flashcards" />
+      </div>
 
       <button class="createBTN">
-        <a href="create">
+        <a href="#create">
           create
           <div class="plusIcon">
             <img
@@ -35,7 +45,43 @@
         </a>
       </button>
 
-      <button class="loginBTN"><a href="login">Log in</a></button>
+      <button class="loginBTN"><a href="#login">Log in</a></button>
+
+      <div class="profileInfo">
+        <div class="profilePic">
+          <img
+            src="images/user_profile/user_Placeholder.png"
+            alt="User Profile Picture"
+          />
+        </div>
+        <div class="dropdownMenu">
+          <div class="profileLinks">
+            <div class="profilePic">
+              <img
+                src="images/user_profile/user_Placeholder.png"
+                alt="User Profile Picture"
+              />
+            </div>
+            <div class="profileText">
+              <p>Alex Hamilton</p>
+              <p>Alex_Hamil@g.com</p>
+            </div>
+          </div>
+          <div class="userLinks"><a href="#profile">Your profile</a></div>
+          <div class="userLinks"><a href="#library">Your Library</a></div>
+          <div class="signOutLink">
+            <a href="#signout "
+              >Sign Out
+              <div class="arrowIcon">
+                <img
+                  src="images/icons/chevron_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Arrow point right"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- Main Content -->
     <div id="app"></div>

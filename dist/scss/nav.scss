@@ -4,6 +4,7 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid map-get($map: $web_colors, $key: "darkSlateGray");
+  position: relative;
   a {
     text-decoration: none;
     text-transform: capitalize;
@@ -15,4 +16,130 @@ nav {
       color: map-get($map: $web_colors, $key: "tomato");
     }
   }
+  .searchBar {
+    height: 90px;
+    width: 500px;
+    background-color: #f1f1f1;
+    border-radius: 16px;
+    overflow: hidden;
+    padding-left: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    .searchIcon {
+      height: 48px;
+      width: 48px;
+      filter: $lightDarkSlateGrayFilter;
+      img {
+        object-fit: cover;
+      }
+    }
+    input {
+      background-color: #f1f1f1;
+      width: 100%;
+      height: 100%;
+      border: none;
+      font-family: Roboto_Regular;
+      font-size: 24px;
+      color: map-get($map: $web_colors, $key: "light_darkSlateGray");
+      outline: none;
+    }
+  }
+  .profileInfo {
+    cursor: pointer;
+    .profilePic {
+      transition-duration: 0.3s;
+      &:hover {
+        filter: brightness(70%);
+      }
+    }
+  }
+}
+.profilePic {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid map-get($map: $web-colors, $key: "charadeBlack");
+  overflow: hidden;
+  img {
+    object-position: center;
+    object-fit: cover;
+  }
+}
+.dropdownMenu {
+  font-size: 24px;
+  background-color: map-get($map: $web_colors, $key: "white");
+  color: map-get($map: $web_colors, $key: "charadeBlack");
+  width: 425px;
+  position: absolute;
+  right: 0;
+  top: 135px;
+  display: none;
+  a {
+    color: map-get($map: $web_colors, $key: "charadeBlack");
+    text-decoration: none;
+    font-family: Roboto_Medium;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .profileLinks,
+  .userLinks {
+    border: 1px solid map-get($map: $web-colors, $key: "charadeBlack");
+  }
+  .userLinks,
+  .signOutLink {
+    height: 80px;
+    width: 100%;
+    padding-left: 30px;
+    transition-duration: 0.25s;
+  }
+  .profileLinks {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .profileText {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      p {
+        margin-bottom: 0;
+        font-family: Roboto_Medium;
+        &:nth-child(even) {
+          color: map-get($map: $web-colors, $key: "light_darkSlateGray");
+        }
+      }
+    }
+  }
+  .userLinks {
+    &:hover {
+      background-color: map-get($map: $web-colors, $key: "charadeBlack");
+      a {
+        color: map-get($map: $web-colors, $key: "white");
+      }
+    }
+  }
+  .signOutLink {
+    background-color: map-get($map: $web_colors, $key: "charadeBlack");
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    a {
+      color: map-get($map: $web-colors, $key: "white");
+    }
+    .arrowIcon {
+      width: 50px;
+      height: 50px;
+      filter: $whiteFilter;
+    }
+    &:hover {
+      background-color: map-get($map: $web-colors, $key: "tomato");
+    }
+  }
+}
+.open {
+  display: block;
 }

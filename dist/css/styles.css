@@ -125,6 +125,7 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid #2c3e50;
+  position: relative;
 }
 nav a {
   text-decoration: none;
@@ -136,6 +137,133 @@ nav a {
 }
 nav a:hover {
   color: #e74c3c;
+}
+nav .searchBar {
+  height: 90px;
+  width: 500px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  overflow: hidden;
+  padding-left: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+nav .searchBar .searchIcon {
+  height: 48px;
+  width: 48px;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(11%) saturate(1778%) hue-rotate(169deg) brightness(99%) contrast(84%);
+}
+nav .searchBar .searchIcon img {
+  object-fit: cover;
+}
+nav .searchBar input {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: Roboto_Regular;
+  font-size: 24px;
+  color: #34495e;
+  outline: none;
+}
+nav .profileInfo {
+  cursor: pointer;
+}
+nav .profileInfo .profilePic {
+  transition-duration: 0.3s;
+}
+nav .profileInfo .profilePic:hover {
+  filter: brightness(70%);
+}
+
+.profilePic {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #1a2530;
+  overflow: hidden;
+}
+.profilePic img {
+  object-position: center;
+  object-fit: cover;
+}
+
+.dropdownMenu {
+  font-size: 24px;
+  background-color: #ffffff;
+  color: #1a2530;
+  width: 425px;
+  position: absolute;
+  right: 0;
+  top: 135px;
+  display: none;
+}
+.dropdownMenu a {
+  color: #1a2530;
+  text-decoration: none;
+  font-family: Roboto_Medium;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dropdownMenu .profileLinks,
+.dropdownMenu .userLinks {
+  border: 1px solid #1a2530;
+}
+.dropdownMenu .userLinks,
+.dropdownMenu .signOutLink {
+  height: 80px;
+  width: 100%;
+  padding-left: 30px;
+  transition-duration: 0.25s;
+}
+.dropdownMenu .profileLinks {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dropdownMenu .profileLinks .profileText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dropdownMenu .profileLinks .profileText p {
+  margin-bottom: 0;
+  font-family: Roboto_Medium;
+}
+.dropdownMenu .profileLinks .profileText p:nth-child(even) {
+  color: #34495e;
+}
+.dropdownMenu .userLinks:hover {
+  background-color: #1a2530;
+}
+.dropdownMenu .userLinks:hover a {
+  color: #ffffff;
+}
+.dropdownMenu .signOutLink {
+  background-color: #1a2530;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.dropdownMenu .signOutLink a {
+  color: #ffffff;
+}
+.dropdownMenu .signOutLink .arrowIcon {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7464%) hue-rotate(326deg) brightness(100%) contrast(114%);
+}
+.dropdownMenu .signOutLink:hover {
+  background-color: #e74c3c;
+}
+
+.open {
+  display: block;
 }
 
 footer {
