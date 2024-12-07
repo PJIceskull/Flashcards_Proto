@@ -8,7 +8,7 @@ export function changeRoute() {
 
   if (pageID != "") {
     $.get(`pages/${pageID}.html`, function (data) {
-      console.log("data " + data);
+      // console.log("data " + data);
       $("#app").html(data);
     });
   } else {

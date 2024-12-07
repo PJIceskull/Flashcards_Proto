@@ -1,0 +1,70 @@
+.heroContainer {
+  height: 100dvh;
+}
+.heroHeader {
+  height: 500px;
+  background-image: url(../images/background/pexels-goumbik-317356.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heroOverlay {
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 45px;
+  padding-left: 99px;
+  h1 {
+    color: map-get($map: $web_colors, $key: "white");
+    font-family: Roboto_Black;
+    font-size: 64px;
+    max-width: 765px;
+    margin-bottom: 0;
+    span {
+      color: map-get($map: $web_colors, $key: "tomato");
+      font-family: Roboto_Black;
+    }
+  }
+  .buttonLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 38px;
+    a,
+    p {
+      font-size: 24px;
+      color: map-get($map: $web_colors, $key: "white");
+    }
+    p {
+      margin-bottom: 0;
+      font-family: Roboto_Condensed_Bold;
+    }
+    button {
+      height: 80px;
+      border-radius: 12px;
+      a {
+        text-decoration: none;
+        font-family: Roboto_Bold;
+      }
+    }
+    .createBTN,
+    .loginBTN {
+      padding: 0 44px;
+    }
+    .createBTN {
+      background-color: map-get($map: $web_colors, $key: "tomato");
+      a {
+        color: map-get($map: $web_colors, $key: "white");
+      }
+      &:hover {
+        background-color: map-get($map: $web_colors, $key: "dark_tomato");
+      }
+    }
+    .loginBTN {
+      width: auto;
+    }
+  }
+}

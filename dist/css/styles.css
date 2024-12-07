@@ -75,7 +75,7 @@ p {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 1440px;
   min-height: 100%;
   margin: 0 auto;
 }
@@ -322,6 +322,79 @@ footer p {
   font-family: Roboto_Light;
   font-size: 20px;
   margin-bottom: 0;
+}
+
+.heroContainer {
+  height: 100dvh;
+}
+
+.heroHeader {
+  height: 500px;
+  background-image: url(../images/background/pexels-goumbik-317356.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 45px;
+  padding-left: 99px;
+}
+.heroOverlay h1 {
+  color: #ffffff;
+  font-family: Roboto_Black;
+  font-size: 64px;
+  max-width: 765px;
+  margin-bottom: 0;
+}
+.heroOverlay h1 span {
+  color: #e74c3c;
+  font-family: Roboto_Black;
+}
+.heroOverlay .buttonLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 38px;
+}
+.heroOverlay .buttonLinks a,
+.heroOverlay .buttonLinks p {
+  font-size: 24px;
+  color: #ffffff;
+}
+.heroOverlay .buttonLinks p {
+  margin-bottom: 0;
+  font-family: Roboto_Condensed_Bold;
+}
+.heroOverlay .buttonLinks button {
+  height: 80px;
+  border-radius: 12px;
+}
+.heroOverlay .buttonLinks button a {
+  text-decoration: none;
+  font-family: Roboto_Bold;
+}
+.heroOverlay .buttonLinks .createBTN,
+.heroOverlay .buttonLinks .loginBTN {
+  padding: 0 44px;
+}
+.heroOverlay .buttonLinks .createBTN {
+  background-color: #e74c3c;
+}
+.heroOverlay .buttonLinks .createBTN a {
+  color: #ffffff;
+}
+.heroOverlay .buttonLinks .createBTN:hover {
+  background-color: #9a3039;
+}
+.heroOverlay .buttonLinks .loginBTN {
+  width: auto;
 }
 
 .signInWrap {
