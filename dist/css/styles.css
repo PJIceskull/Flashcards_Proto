@@ -325,7 +325,7 @@ footer p {
 }
 
 .heroContainer {
-  height: 100dvh;
+  min-height: 100dvh;
 }
 
 .heroHeader {
@@ -334,6 +334,7 @@ footer p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 35px;
 }
 
 .heroOverlay {
@@ -399,6 +400,198 @@ footer p {
 }
 .heroOverlay .buttonLinks .loginBTN:hover {
   background-color: #2c3e50;
+}
+
+.featuresWrap {
+  max-width: 615px;
+  margin: 0 auto;
+  margin-bottom: 83px;
+}
+.featuresWrap h2 {
+  text-transform: capitalize;
+  font-family: Roboto_Bold;
+  font-size: 48px;
+  color: #1a2530;
+  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.featuresWrap .featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.featuresWrap .feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 25px;
+  width: 100%;
+}
+.featuresWrap .feature .featureIcon {
+  height: 90px;
+  width: 90px;
+  background-color: #e74c3c;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.featuresWrap .feature .featureIcon img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7464%) hue-rotate(326deg) brightness(100%) contrast(114%);
+  height: 60px;
+  width: 60px;
+}
+.featuresWrap .feature p {
+  width: 500px;
+  font-size: 24px;
+  font-family: Roboto_Light;
+  margin-bottom: 0;
+}
+
+.exploreSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 104px;
+}
+.exploreSection .exploreText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.exploreSection .exploreText h2 {
+  color: #e74c3c;
+  font-size: 42px;
+  font-family: Roboto_Bold;
+  max-width: 580px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.exploreSection .exploreText p {
+  max-width: 560px;
+  font-size: 24px;
+}
+.exploreSection .exploreText .exploreBTN {
+  border-radius: 50px;
+  background-color: #e74c3c;
+  height: 85px;
+  width: 475px;
+  padding: 33px 9px;
+  transition-duration: 0.25s;
+}
+.exploreSection .exploreText .exploreBTN a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Roboto_Bold;
+  font-size: 24px;
+  text-transform: capitalize;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.exploreSection .exploreText .exploreBTN .arrowIcon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7464%) hue-rotate(326deg) brightness(100%) contrast(114%);
+  height: 38px;
+  width: 38px;
+}
+.exploreSection .exploreText .exploreBTN:hover {
+  background-color: #9a3039;
+}
+.exploreSection .exploreIMG {
+  max-width: 525px;
+  height: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.exploreSection .exploreIMG img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.flashcardSect {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  margin-bottom: 55px;
+}
+.flashcardSect .sectHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.flashcardSect .sectHeader h3 {
+  color: #e74c3c;
+  font-size: 40px;
+  font-family: Roboto_Bold;
+  margin-bottom: 0;
+}
+.flashcardSect .sectHeader hr {
+  border: none;
+  background-color: #1a2530;
+  height: 5px;
+  max-width: 300px;
+}
+.flashcardSect .cardSelection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flashcardSect .card {
+  border: 2px solid #2c3e50;
+  border-radius: 12px;
+  padding: 25px 30px;
+  max-width: 360px;
+  color: #1a2530;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.flashcardSect .card .cardHeader h4 {
+  margin-bottom: 15px;
+  font-family: Roboto_Bold;
+  font-size: 32px;
+}
+.flashcardSect .card .cardHeader hr {
+  border: 2px solid #e74c3c;
+}
+.flashcardSect .card .termNum {
+  color: #ffffff;
+  background-color: #2c3e50;
+  border-radius: 25px;
+  padding: 11px 8px;
+  width: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.flashcardSect .card .termNum p {
+  margin-bottom: 0;
+  font-family: Roboto_Medium;
+}
+.flashcardSect .card .cardAuthor {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+}
+.flashcardSect .card .cardAuthor .profilePic {
+  background-color: #e74c3c;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+}
+.flashcardSect .card .cardAuthor .profilePic img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7464%) hue-rotate(326deg) brightness(100%) contrast(114%);
+}
+.flashcardSect .card .cardAuthor p {
+  font-size: 18px;
+  font-family: Roboto_Bold;
+  margin-bottom: 0;
 }
 
 .signInWrap {
