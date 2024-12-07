@@ -18,6 +18,8 @@ $whiteFilter: brightness(0) saturate(100%) invert(100%) sepia(0%)
   saturate(7464%) hue-rotate(326deg) brightness(100%) contrast(114%);
 $lightDarkSlateGrayFilter: brightness(0) saturate(100%) invert(23%) sepia(11%)
   saturate(1778%) hue-rotate(169deg) brightness(99%) contrast(84%);
+$darkSlateGrayFilter: brightness(0) saturate(100%) invert(21%) sepia(12%)
+  saturate(1573%) hue-rotate(169deg) brightness(94%) contrast(89%);
 
 // Device Sizes
 $site-width: 1280px;
@@ -25,3 +27,11 @@ $site-height: 800px;
 $web-width: 1440px;
 $iPad-width: 780px;
 $phone-width: 430px;
+
+// Font weight
+$Thin: 100;
+$Light: 300;
+$Regular: 400;
+$Medium: 500;
+$Bold: 700;
+$Black: 900;

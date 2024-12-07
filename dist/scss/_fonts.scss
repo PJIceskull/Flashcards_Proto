@@ -28,3 +28,29 @@
   src: url(fonts/Roboto-Black.ttf);
   font-weight: 900;
 }
+// Roboto Condensed
+@font-face {
+  font-family: Roboto_Condensed_Thin;
+  src: url(fonts/RobotoCondensed-VariableFont_wght.ttf);
+  font-weight: $Thin;
+}
+@font-face {
+  font-family: Roboto_Condensed_Light;
+  src: url(fonts/RobotoCondensed-VariableFont_wght.ttf);
+  font-weight: $Light;
+}
+@font-face {
+  font-family: Roboto_Condensed;
+  src: url(fonts/RobotoCondensed-VariableFont_wght.ttf);
+  font-weight: $Regular;
+}
+@font-face {
+  font-family: Roboto_Condensed_Bold;
+  src: url(fonts/RobotoCondensed-VariableFont_wght.ttf);
+  font-weight: $Bold;
+}
+@font-face {
+  font-family: Roboto_Condensed_Black;
+  src: url(fonts/RobotoCondensed-VariableFont_wght.ttf);
+  font-weight: $Black;
+}

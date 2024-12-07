@@ -1,6 +1,7 @@
 button {
   transition-duration: 0.3s;
   border: none;
+  cursor: pointer;
 }
 .createBTN {
   background-color: white;
@@ -52,5 +53,20 @@ button {
     a {
       color: map-get($map: $web_colors, $key: "white");
     }
+  }
+}
+.submitBTN {
+  color: map-get($map: $web_colors, $key: "white");
+  background-color: map-get($map: $web_colors, $key: "tomato");
+  border: none;
+  font-family: Roboto_Bold;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color: map-get($map: $web_colors, $key: "dark_tomato");
+  }
+  &:active {
+    background-color: map-get($map: $web_colors, $key: "white");
+    color: map-get($map: $web_colors, $key: "tomato");
   }
 }

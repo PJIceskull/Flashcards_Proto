@@ -1,0 +1,208 @@
+.createCardWrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  padding: 60px 0 75px;
+  //   display: flex;
+  //   flex-direction: column;
+}
+.createHeader {
+  margin-bottom: 42px;
+  h1 {
+    margin-bottom: 10px;
+    font-family: Roboto_Condensed_Bold;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 48px;
+    color: map-get($map: $web_colors, $key: "charadeBlack");
+  }
+  hr {
+    border: 4px solid map-get($map: $web_colors, $key: "charadeBlack");
+    border-radius: 50px;
+  }
+}
+.createCardForm {
+  display: flex;
+  flex-direction: column;
+  .titleInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 70px;
+  }
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 28px;
+    label {
+      font-family: Roboto_Bold;
+    }
+    input {
+      font-size: 24px;
+      background-color: #e8e8e8;
+      color: map-get($map: $web-colors, $key: "charadeBlack");
+      border-radius: 10px;
+      border: none;
+      padding: 30px;
+      height: 90px;
+      outline: none;
+      &::placeholder {
+        color: map-get($map: $web_colors, $key: "light_darkSlateGray");
+        font-family: Roboto_Light;
+      }
+      &:focus {
+        background-color: darken($color: #e8e8e8, $amount: 10%);
+      }
+    }
+  }
+  .addCard {
+    color: map-get($map: $web_colors, $key: "charadeBlack");
+    height: 200px;
+    border: 3px dotted map-get($map: $web_colors, $key: "charadeBlack");
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    margin-bottom: 45px;
+    h2 {
+      font-family: Roboto_Bold;
+      font-size: 42px;
+      margin-bottom: 0;
+    }
+    &:hover {
+      background-color: darken($color: #f1f1f1, $amount: 10%);
+    }
+    &:active {
+      background-color: #ffffff;
+      color: map-get($map: $web_colors, $key: "darkSlateGray");
+    }
+  }
+  .createCardContainer {
+    display: flex;
+    // align-items: center;
+    // justify-content: space-evenly;
+    flex-direction: column;
+    gap: 36px;
+    margin-bottom: 36px;
+  }
+  .cardInputBox {
+    color: map-get($map: $web_colors, $key: "white");
+    .topSection {
+      background-color: map-get($map: $web_colors, $key: "darkSlateGray");
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      margin-bottom: 2px;
+      h2 {
+        margin-bottom: 0;
+      }
+      .closeBTN {
+        background-color: map-get($map: $web_colors, $key: "white");
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        transition-duration: 0.25s;
+        img {
+          filter: $darkSlateGrayFilter;
+          height: 34px;
+          width: 34px;
+          object-fit: cover;
+          object-position: center;
+        }
+        &:hover {
+          background-color: map-get($map: $web_colors, $key: "tomato");
+          img {
+            filter: $whiteFilter;
+          }
+        }
+      }
+    }
+    .bottomSection {
+      background-color: map-get($map: $web_colors, $key: "light_darkSlateGray");
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding: 50px 45px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .inputWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+      }
+      .cardInput {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 525px;
+        label {
+          text-transform: uppercase;
+          font-size: 24px;
+          font-family: Roboto_Bold;
+        }
+        input {
+          border: none;
+          border-bottom: 2px solid map-get($map: $web_colors, $key: "white");
+          padding: 6px 0;
+          color: map-get($map: $web_colors, $key: "white");
+          background-color: map-get(
+            $map: $web_colors,
+            $key: "light_darkSlateGray"
+          );
+          font-size: 28px;
+          outline: none;
+          &::placeholder {
+            font-family: Roboto_Light;
+            color: map-get($map: $web_colors, $key: "white");
+          }
+          &:focus {
+            background-color: map-get($map: $web_colors, $key: "darkSlateGray");
+          }
+        }
+      }
+      .imageUpload {
+        height: 200px;
+        width: 425px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 34px;
+        border-radius: 3px;
+        border: 2px dotted map-get($map: $web_colors, $key: "white");
+        cursor: pointer;
+        transition-duration: 0.3s;
+        .imageIcon {
+          height: 64px;
+          width: 64px;
+          img {
+            filter: $whiteFilter;
+          }
+        }
+        h3 {
+          margin-bottom: 0;
+          font-family: Roboto_Medium;
+          font-size: 24px;
+        }
+        &:hover {
+          background-color: map-get($map: $web_colors, $key: "darkSlateGray");
+        }
+      }
+    }
+  }
+  .submitBTN {
+    border-radius: 18px;
+    font-size: 24px;
+    padding: 28px 61px;
+    max-width: 200px;
+    height: 94px;
+    align-self: flex-end;
+  }
+}
