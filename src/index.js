@@ -6,7 +6,6 @@ import { changeRoute } from "./model.js";
 function initListeners() {
   // Click on user profile on navbar to open dropdown menu
   $(".profileInfo").on("click", function () {
-    console.log("Click");
     $(".dropdownMenu").toggleClass("open");
   });
 }
