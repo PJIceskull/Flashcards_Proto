@@ -65,6 +65,10 @@
     }
     .loginBTN {
       width: auto;
+      background-color: map-get($map: $web_colors, $key: "charadeBlack");
+      &:hover {
+        background-color: map-get($map: $web_colors, $key: "darkSlateGray");
+      }
     }
   }
 }
