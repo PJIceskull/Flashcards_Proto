@@ -48,6 +48,7 @@ nav {
   }
   .profileInfo {
     cursor: pointer;
+    display: none;
     .profilePic {
       transition-duration: 0.3s;
       &:hover {

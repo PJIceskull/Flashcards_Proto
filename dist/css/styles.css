@@ -212,6 +212,7 @@ nav .searchBar input {
 }
 nav .profileInfo {
   cursor: pointer;
+  display: none;
 }
 nav .profileInfo .profilePic {
   transition-duration: 0.3s;
