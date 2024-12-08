@@ -4,7 +4,8 @@ This is the code repository for the prototype build of my Flashcard application.
 
 ## Preview Site
 
-- [Web4]()
+- [**Web4 Sever**](https://in-info-web4.luddy.indianapolis.iu.edu/~pissah/N423/Flashcard_App/dist/)
+- [Firebase Hosting](https://n423-flashcards.web.app)
 - [Github Pages](https://pjiceskull.github.io/Flashcards_Proto/dist)
 
 Link to Website Design Prototype

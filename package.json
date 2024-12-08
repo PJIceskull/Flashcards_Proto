@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "live-server dist",
     "compile:sass": "sass dist/scss/styles.scss dist/css/styles.css -w",
-    "build-webpack": "webpack"
+    "build-webpack": "webpack",
+    "deploy": "firebase deploy --except functions"
   },
   "keywords": [],
   "author": "Pierce Issah",
