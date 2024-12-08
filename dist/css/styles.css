@@ -234,7 +234,6 @@ nav .profileInfo .profilePic:hover {
 
 .dropdownMenu {
   font-size: 24px;
-  background-color: #ffffff;
   color: #1a2530;
   width: 425px;
   position: absolute;
@@ -255,6 +254,7 @@ nav .profileInfo .profilePic:hover {
 .dropdownMenu .profileLinks,
 .dropdownMenu .userLinks {
   border: 1px solid #1a2530;
+  background-color: #ffffff;
 }
 .dropdownMenu .userLinks,
 .dropdownMenu .signOutLink {

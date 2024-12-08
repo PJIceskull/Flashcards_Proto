@@ -69,7 +69,6 @@ nav {
 }
 .dropdownMenu {
   font-size: 24px;
-  background-color: map-get($map: $web_colors, $key: "white");
   color: map-get($map: $web_colors, $key: "charadeBlack");
   width: 425px;
   position: absolute;
@@ -89,6 +88,7 @@ nav {
   .profileLinks,
   .userLinks {
     border: 1px solid map-get($map: $web-colors, $key: "charadeBlack");
+    background-color: map-get($map: $web_colors, $key: "white");
   }
   .userLinks,
   .signOutLink {
