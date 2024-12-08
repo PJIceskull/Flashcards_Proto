@@ -649,6 +649,18 @@ footer p {
   font-family: Roboto_Light;
   color: #34495e;
 }
+.signUpForm .inputBox input:focus,
+.createForm .inputBox input:focus {
+  background-color: #b5b5b5;
+}
+.signUpForm .inputBox input:user-valid,
+.createForm .inputBox input:user-valid {
+  border-bottom: 3px solid #90ee90;
+}
+.signUpForm .inputBox input:user-invalid,
+.createForm .inputBox input:user-invalid {
+  border-bottom: 3px solid #e74c3c;
+}
 .signUpForm .loginBTN,
 .createForm .loginBTN {
   display: flex;

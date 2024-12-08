@@ -44,6 +44,15 @@
         font-family: Roboto_Light;
         color: map-get($map: $web_colors, $key: "light_darkSlateGray");
       }
+      &:focus {
+        background-color: darken($color: #e8e8e8, $amount: 20%);
+      }
+      &:user-valid {
+        border-bottom: 3px solid #90ee90;
+      }
+      &:user-invalid {
+        border-bottom: 3px solid map-get($map: $web_colors, $key: "tomato");
+      }
     }
   }
   .loginBTN {
