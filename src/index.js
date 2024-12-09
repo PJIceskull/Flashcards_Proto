@@ -18,7 +18,7 @@ export function addFormListeners() {
   });
 }
 
-function initListeners() {
+export function initListeners() {
   // Click on user profile on navbar to open dropdown menu
   $(".profileInfo").on("click", function () {
     $(".dropdownMenu").toggleClass("open");
@@ -29,6 +29,10 @@ function initListeners() {
   });
   // Signing out
   $(".dropdownMenu .signOutLink").on("click", function (e) {
+    e.preventDefault();
+    logOut();
+  });
+  $(".profileSect .signOutBTN").on("click", function (e) {
     e.preventDefault();
     logOut();
   });

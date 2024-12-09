@@ -1,6 +1,6 @@
 // Import
 import { app } from "./firebaseConfig.js";
-import { addFormListeners } from "./index.js";
+import { addFormListeners, initListeners } from "./index.js";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -31,6 +31,7 @@ export function changeRoute() {
       $("#app").html(data);
       // console.log(pathName + pageID);
       // console.log(window.location.href.replace("#", ""));
+      initListeners();
     });
     if (pageID == "login" || pageID == "signup") {
       $.get(`pages/${pageID}.html`, function (data) {
@@ -47,10 +48,21 @@ export function changeRoute() {
 }
 
 function changePage(pageName) {
+  let hashTag = window.location.hash;
+  let pageID = hashTag.replace("#", "");
+  let webURL = window.location.href;
+  console.log(pageID);
+
   if (pageName != "") {
     $.get(`pages/${pageName}.html`, function (data) {
       // Scroll to Top of the Page
       scroll(0, 0);
+      console.log(webURL);
+      console.log(webURL.replace(hashTag, `#${pageName}`));
+      // URL is glitchy as it **preserve** the #hashtag from the previous page.
+      // If the user tries to back to another page
+      // Want the # in the webpage URL to change but the url stays the same.
+      webURL = webURL.replace(hashTag, `#${pageName}`);
       $("#app").html(data);
     });
   }
