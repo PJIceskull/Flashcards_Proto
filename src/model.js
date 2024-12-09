@@ -16,6 +16,7 @@ const auth = getAuth(app);
 export function changeRoute() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
+  // let pathName = window.location.pathname;
   console.log(hashTag + " " + pageID);
 
   // Scroll to Top of the Page
@@ -25,6 +26,8 @@ export function changeRoute() {
     $.get(`pages/${pageID}.html`, function (data) {
       // console.log("data " + data);
       $("#app").html(data);
+      // console.log(pathName + pageID);
+      // console.log(window.location.href.replace("#", ""));
     });
     if (pageID == "login" || pageID == "signup") {
       $.get(`pages/${pageID}.html`, function (data) {
@@ -114,11 +117,20 @@ export function logIn() {
     });
 }
 export function logOut() {
+  // let hashTag = window.location.hash;
+  // let pageID = hashTag.replace("#", "");
+
   signOut(auth)
     .then(() => {
       // Sign-out successful.
       console.log("Sign-out successful.");
-      changeRoute();
+      // changeRoute();
+      $.get(`pages/home.html`, function (data) {
+        $("#app").html(data);
+      });
+      // console.log(hashTag);
+      // console.log(hashTag.replace(hashTag, ""));
+      // hashTag.replace(hashTag, "");
     })
     .catch((error) => {
       // An error happened.
