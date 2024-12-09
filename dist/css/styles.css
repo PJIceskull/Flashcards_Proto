@@ -954,4 +954,26 @@ footer p {
   font-size: 24px;
 }
 
+.flashCardSuccess {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 35px;
+}
+.flashCardSuccess .cardsIcon {
+  width: 124.95px;
+  height: 118.72px;
+  rotate: 180deg;
+  filter: brightness(0) saturate(100%) invert(45%) sepia(59%) saturate(2397%) hue-rotate(333deg) brightness(89%) contrast(103%);
+}
+.flashCardSuccess h1 {
+  color: #e74c3c;
+  font-family: Roboto_Bold;
+  font-size: 48px;
+  text-transform: capitalize;
+  max-width: 500px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
