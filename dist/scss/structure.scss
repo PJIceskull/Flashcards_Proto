@@ -8,6 +8,10 @@ html,
 body {
   height: 100%;
 }
+html {
+  scrollbar-color: map-get($map: $web_colors, $key: "tomato")
+    map-get($map: $web_colors, $key: "white");
+}
 h1,
 h2,
 h3,
@@ -22,7 +26,6 @@ p {
   max-width: $site-width;
   // min-height: $site-height;
   min-height: 100%;
-  // background-color: burlywood;
   margin: 0 auto;
 }
 
