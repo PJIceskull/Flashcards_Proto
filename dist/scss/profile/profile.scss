@@ -1,0 +1,125 @@
+.profilePage {
+  min-height: 100dvh;
+  //   max-width    : 1200px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.profileSect {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 90px;
+  .profilePic {
+    width: 250px;
+    height: 250px;
+    img {
+      object-position: top;
+    }
+  }
+  .profileText {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    h1 {
+      font-size: 48px;
+      font-family: Roboto_Bold;
+      color: map-get($map: $web_colors, $key: "charadeBlack");
+      margin-bottom: 0px;
+    }
+    .emailText {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      p {
+        color: map-get($map: $web_colors, $key: "light_darkSlateGray");
+        font-size: 32px;
+        margin-bottom: 0px;
+        strong {
+          font-family: Roboto_Bold;
+          color: map-get($map: $web_colors, $key: "darkSlateGray");
+          font-size: 36px;
+        }
+      }
+    }
+  }
+  .signOutBTN {
+    background-color: map-get($map: $web_colors, $key: "tomato");
+    border-radius: 12px;
+    padding: 35px 37px;
+    width: 225px;
+    height: 110px;
+    color: map-get($map: $web_colors, $key: "white");
+    font-family: Roboto_Bold;
+    font-size: 32px;
+    &:hover {
+      background-color: lighten(
+        $color: map-get($map: $web_colors, $key: "tomato"),
+        $amount: 10%
+      );
+    }
+  }
+}
+.libraryHeader {
+  border-radius: 12px;
+  background-color: map-get($map: $web_colors, $key: "tomato");
+  height: 232px;
+  padding: 75px;
+  margin-bottom: 48px;
+  h1 {
+    color: map-get($map: $web_colors, $key: "white");
+    font-family: Roboto_Bold;
+    font-size: 64px;
+    margin-bottom: 0;
+  }
+}
+
+.cardList {
+  .listHeader {
+    margin-bottom: 27px;
+    h2 {
+      margin-bottom: 4.5px;
+      font-family: Roboto_Bold;
+      font-size: 32px;
+    }
+    hr {
+      border: 4px solid map-get($map: $web_colors, $key: "tomato");
+      border-radius: 25px;
+    }
+  }
+}
+.cardGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.setItem {
+  height: 150px;
+  border-radius: 10px;
+  background-color: map-get($map: $web_colors, $key: "light_darkSlateGray");
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 35px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  h3,
+  p {
+    color: map-get($map: $web_colors, $key: "white");
+    margin-bottom: 0;
+    font-family: Roboto_Bold;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+  }
+  &:hover {
+    background-color: map-get($map: $web_colors, $key: "charadeBlack");
+  }
+  &:active {
+    background-color: map-get($map: $web_colors, $key: "darkSlateGray");
+  }
+}
