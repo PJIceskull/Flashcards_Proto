@@ -11,6 +11,9 @@ import {
 
 // Variable
 const auth = getAuth(app);
+// Time
+let oneSecond = 1000; // One Second is 1000
+let oneMinute = 1000 * 60;
 
 // Change href routing with #
 export function changeRoute() {
@@ -43,6 +46,25 @@ export function changeRoute() {
   }
 }
 
+function changePage(pageName) {
+  if (pageName != "") {
+    $.get(`pages/${pageName}.html`, function (data) {
+      // Scroll to Top of the Page
+      scroll(0, 0);
+      $("#app").html(data);
+    });
+  }
+}
+
+function initURLListener() {
+  $(window).on("hashchange", changeRoute);
+  changeRoute();
+}
+
+$(document).ready(function () {
+  initURLListener();
+});
+
 // Check if User is signed in.
 onAuthStateChanged(auth, (user) => {
   if (user) {
@@ -59,9 +81,9 @@ onAuthStateChanged(auth, (user) => {
     // User is signed out
     // ...
     console.log("No user is signed in.");
-    // Hide User Profile
     // Show Login Button
     $("nav .loginBTN").css("display", "block");
+    // Hide User Profile
     $("nav .profileInfo").css("display", "none");
   }
 });
@@ -84,7 +106,12 @@ export function createAccount() {
       // ...
       console.log(user);
       console.log("You have created an account");
-      changeRoute();
+      // Change Page to show Success Screen
+      changePage("signin_success");
+      // Then change page to user profile page
+      setTimeout(function () {
+        changePage("profile");
+      }, oneSecond * 2.5);
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -107,7 +134,7 @@ export function logIn() {
       // ...
       console.log(user);
       console.log("You've logged in");
-      changeRoute();
+      changePage("home"); // Link User to Home Page
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -124,13 +151,7 @@ export function logOut() {
     .then(() => {
       // Sign-out successful.
       console.log("Sign-out successful.");
-      // changeRoute();
-      $.get(`pages/home.html`, function (data) {
-        $("#app").html(data);
-      });
-      // console.log(hashTag);
-      // console.log(hashTag.replace(hashTag, ""));
-      // hashTag.replace(hashTag, "");
+      changePage("login"); // Sent User back to Login Screen
     })
     .catch((error) => {
       // An error happened.

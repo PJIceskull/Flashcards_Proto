@@ -1,0 +1,60 @@
+.successWrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.successCard {
+  max-width: 600px;
+  min-height: 450px;
+  border-radius: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 50px;
+  box-shadow: 10px 12px 21px 2px rgba($color: #000000, $alpha: 0.4);
+  .checkIcon {
+    height: 72px;
+    width: 72px;
+    filter: $lightDarkSlateGrayFilter;
+  }
+  h1,
+  p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  h1 {
+    max-width: 500px;
+    color: map-get($map: $web_colors, $key: "tomato");
+    font-family: Roboto_Bold;
+    font-size: 40px;
+  }
+  p {
+    max-width: 385px;
+    color: map-get($map: $web_colors, $key: "darkSlateGray");
+    font-size: 24px;
+  }
+}
+.flashCardSuccess {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 35px;
+  .cardsIcon {
+    width: 124.95px;
+    height: 118.72px;
+    rotate: 180deg;
+    filter: $tomatoFilter;
+  }
+  h1 {
+    color: map-get($map: $web_colors, $key: "tomato");
+    font-family: Roboto_Bold;
+    font-size: 48px;
+    text-transform: capitalize;
+    max-width: 500px;
+    text-align: center;
+  }
+}
