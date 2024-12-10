@@ -1,0 +1,101 @@
+.cardWrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 45px 65px;
+}
+.flashcard {
+  background-color: map-get($map: $web_colors, $key: "white");
+  border-radius: 24px;
+  width: 520px;
+  height: 320px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 7px 7px 13px rgba($color: #000000, $alpha: 0.15);
+  position: relative;
+  .front,
+  .back {
+    p {
+      font-size: 32px;
+      font-family: Roboto_Bold;
+      max-width: 450px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+  .front {
+    p {
+      color: map-get($map: $web_colors, $key: "charadeBlack");
+    }
+  }
+  .back {
+    p {
+      color: map-get($map: $web_colors, $key: "tomato");
+    }
+  }
+  .optionsBox {
+    right: 0px;
+    transition: ease-in-out 0.25s;
+    opacity: 0%;
+  }
+  &:hover {
+    .optionsBox {
+      right: -60px;
+      opacity: 100%;
+    }
+  }
+}
+.optionsBox {
+  height: 320px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  position: absolute;
+  //   right: -60px;
+  .deleteBTN,
+  .editBTN {
+    width: 50px;
+    height: 50px;
+    background-color: map-get($map: $web_colors, $key: "white");
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition-duration: 0.25s;
+    cursor: pointer;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .deleteBTN {
+    img {
+      filter: $tomatoFilter;
+    }
+    &:hover {
+      background-color: map-get($map: $web_colors, $key: "tomato");
+      img {
+        filter: $whiteFilter;
+      }
+    }
+  }
+  .editBTN {
+    img {
+      filter: $charadeBlackfilter;
+    }
+    &:hover {
+      background-color: map-get($map: $web_colors, $key: "charadeBlack");
+      img {
+        filter: $whiteFilter;
+      }
+    }
+  }
+}

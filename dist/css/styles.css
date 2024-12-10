@@ -1104,4 +1104,145 @@ footer p {
   background-color: #2c3e50;
 }
 
+.cardWrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 45px 65px;
+}
+
+.flashcard {
+  background-color: #ffffff;
+  border-radius: 24px;
+  width: 520px;
+  height: 320px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.flashcard .front p,
+.flashcard .back p {
+  font-size: 32px;
+  font-family: Roboto_Bold;
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.flashcard .front p {
+  color: #1a2530;
+}
+.flashcard .back p {
+  color: #e74c3c;
+}
+.flashcard .optionsBox {
+  right: 0px;
+  transition: ease-in-out 0.25s;
+  opacity: 0%;
+}
+.flashcard:hover .optionsBox {
+  right: -60px;
+  opacity: 100%;
+}
+
+.optionsBox {
+  height: 320px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  position: absolute;
+}
+.optionsBox .deleteBTN,
+.optionsBox .editBTN {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+.optionsBox .deleteBTN img,
+.optionsBox .editBTN img {
+  width: 30px;
+  height: 30px;
+}
+.optionsBox .deleteBTN img {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(59%) saturate(2397%) hue-rotate(333deg) brightness(89%) contrast(103%);
+}
+.optionsBox .deleteBTN:hover {
+  background-color: #e74c3c;
+}
+.optionsBox .deleteBTN:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7464%) hue-rotate(326deg) brightness(100%) contrast(114%);
+}
+.optionsBox .editBTN img {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(26%) saturate(850%) hue-rotate(168deg) brightness(96%) contrast(91%);
+}
+.optionsBox .editBTN:hover {
+  background-color: #1a2530;
+}
+.optionsBox .editBTN:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7464%) hue-rotate(326deg) brightness(100%) contrast(114%);
+}
+
+.flashContainer {
+  min-height: 100dvh;
+  background-color: #eea7a0;
+  padding-top: 60px;
+}
+
+.flashHeader {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 65px;
+}
+.flashHeader h1 {
+  color: #ffffff;
+  font-size: 64px;
+  font-family: Roboto_Black;
+  align-self: center;
+}
+.flashHeader .authorSection {
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px 0;
+}
+.flashHeader .authorSection .profilePic img {
+  object-position: top;
+}
+.flashHeader .authorSection .authorText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.flashHeader .authorSection .authorText h2,
+.flashHeader .authorSection .authorText p {
+  margin-bottom: 0;
+  color: #1a2530;
+  font-size: 36px;
+}
+.flashHeader .authorSection .authorText h2 {
+  font-family: Roboto_Bold;
+}
+.flashHeader .authorSection .authorText p {
+  font-family: Roboto_Light;
+}
+
 /*# sourceMappingURL=styles.css.map */

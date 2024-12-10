@@ -1,0 +1,49 @@
+.flashContainer {
+  min-height: 100dvh;
+  background-color: #eea7a0;
+  padding-top: 60px;
+}
+.flashHeader {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  h1 {
+    color: map-get($map: $web_colors, $key: "white");
+    font-size: 64px;
+    font-family: Roboto_Black;
+    align-self: center;
+  }
+  .authorSection {
+    border-top: 3px solid map-get($map: $web_colors, $key: "white");
+    border-bottom: 3px solid map-get($map: $web_colors, $key: "white");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px 0;
+    .profilePic {
+      img {
+        object-position: top;
+      }
+    }
+    .authorText {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h2,
+      p {
+        margin-bottom: 0;
+        color: map-get($map: $web_colors, $key: "charadeBlack");
+        font-size: 36px;
+      }
+      h2 {
+        font-family: Roboto_Bold;
+      }
+      p {
+        font-family: Roboto_Light;
+      }
+    }
+  }
+}
