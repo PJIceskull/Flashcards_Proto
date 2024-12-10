@@ -1127,6 +1127,14 @@ footer p {
   box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.15);
   position: relative;
 }
+.flashcard .front,
+.flashcard .back {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 15px;
+}
 .flashcard .front p,
 .flashcard .back p {
   font-size: 32px;
@@ -1134,6 +1142,18 @@ footer p {
   max-width: 450px;
   text-align: center;
   margin-bottom: 0;
+}
+.flashcard .front .cardImage,
+.flashcard .back .cardImage {
+  height: 150px;
+  width: 100%;
+  max-width: 425px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.flashcard .front .cardImage img,
+.flashcard .back .cardImage img {
+  object-fit: cover;
 }
 .flashcard .front p {
   color: #1a2530;

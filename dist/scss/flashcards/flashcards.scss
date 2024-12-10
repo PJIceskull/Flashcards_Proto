@@ -21,12 +21,27 @@
   position: relative;
   .front,
   .back {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 15px;
     p {
       font-size: 32px;
       font-family: Roboto_Bold;
       max-width: 450px;
       text-align: center;
       margin-bottom: 0;
+    }
+    .cardImage {
+      height: 150px;
+      width: 100%;
+      max-width: 425px;
+      border-radius: 18px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+      }
     }
   }
   .front {
